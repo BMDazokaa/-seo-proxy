@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: seo-proxy
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: DFS_LOGIN
+        sync: false
+      - key: DFS_PASSWORD
+        sync: false
